@@ -2478,7 +2478,7 @@ vary@^1.1.2:
   resolved "https://registry.npm.taobao.org/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vite@^1.0.0-beta.3:
+vite@1.0.0-beta.11:
   version "1.0.0-beta.11"
   resolved "https://registry.npm.taobao.org/vite/download/vite-1.0.0-beta.11.tgz#85c87549264d4b74a05da2c3eb1eb42fa8460197"
   integrity sha1-hch1SSZNS3SgXaLD6x60L6hGAZc=

@@ -209,6 +209,30 @@ import store from './store';
 
 createApp(App).use(router).use(store).mount('#app');
 ```  
+### TSX
+最终我们的组件代码，都会是这样的：`App.tsx`:  
+```js
+import { defineComponent } from 'vue';
+import {RouterLink, RouterView} from 'vue-router';
+import './style/main.scss'
+
+export default defineComponent({
+  name: 'App',
+  setup() {
+    return () => (
+      <>
+        <div id="nav">
+          <RouterLink to="/">Home</RouterLink> |
+          <RouterLink to="/about">About</RouterLink>
+        </div>
+        <RouterView/>
+      </>
+    );
+  }
+});
+```  
+自我感觉TSX比模板好多了，并且html、组件标签的属性都带有类型推断。
+
 ## 结尾
 vue3正式版的发布，势必导致vue2的周边框架的集体更新，例如UI框架、基于Vue2的指令库等，作为这么久的白嫖党，也要为vue3社区的建设出一份力了。
   

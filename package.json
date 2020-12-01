@@ -6,22 +6,22 @@
     "build": "vite build"
   },
   "dependencies": {
-    "vue": "3.0.0-beta.22",
-    "vue-router": "4.0.0-beta.2",
-    "vuex": "4.0.0-beta.4"
+    "vue": "3.0.3",
+    "vue-router": "4.0.0-rc.6",
+    "vuex": "4.0.0-rc.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
-    "@vue/compiler-sfc": "^3.0.0-beta.15",
+    "@vue/compiler-sfc": "3.0.3",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-vue": "^7.0.0-alpha.10",
+    "eslint-plugin-vue": "7.1.0",
     "prettier": "^2.0.5",
     "sass": "^1.26.10",
     "typescript": "^3.9.6",
-    "vite": "1.0.0-beta.11",
+    "vite": "1.0.0-rc.13",
     "vue-eslint-parser": "^7.1.0"
   }
 }

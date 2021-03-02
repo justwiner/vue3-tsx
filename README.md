@@ -1,10 +1,10 @@
 # Vue3与TSX尝鲜版
 ## 涉及到的主要依赖
-1. `vite@1.0.0-beta.11`：新一代脚手架
-2. `vue@3.0.0-beta.22`：beta版
-3. `vuex@4.0.0-beta.4`
-4. `vue-router@4.0.0-beta.2`
-5. `typescript@3.9.6`
+1. `vite@2.0.4`
+2. `vue@3.0.7`
+3. `vuex@4.0.0`
+4. `vue-router@4.0.4`
+5. `typescript@4.2.2`
 
 ## 准备工作
 1. 确保安装`yarn`
@@ -139,7 +139,7 @@ declare module '*.jpg';
 
 ### 集成vue-router
 ```bash
-yarn add --dev vue-router@4.0.0-beta.2
+yarn add --dev vue-router@4.0.4
 ```
 这里可以去`npm官网`查找最新版本  
 在src目录下，`新建router文件夹`，并在文件夹内`创建index.ts`
@@ -151,7 +151,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Home',
-    component: import('../views/Home'),
+    component: () => import('../views/Home'),
   },
   {
     path: '/about',
@@ -161,7 +161,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 
@@ -173,7 +173,7 @@ export default router;
 ### 集成vuex
 
 ```bash
-yarn add --dev vuex@4.0.0-beta.4
+yarn add --dev vuex@4.0.0
 ```
 在src目录下，新建store文件夹，并在文件夹内创建`index.ts`  
 
